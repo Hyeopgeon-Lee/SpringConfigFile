@@ -14,7 +14,6 @@ management:
     shutdown:
       enabled: true
   server:
-    address: localhost
     port: ${USER-SERVICE-ACTUATOR}
 spring:
   jpa:
@@ -32,8 +31,8 @@ spring:
     open-in-view: 'false'
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
-    password: 'poly1234'
-    username: poly
+    password: ${MARIADB-PASSWORD}
+    username: ${MARIADB-USER}
     url: jdbc:mariadb://${MARIADB-IP}:${MARIADB-PORT}/myDB
   application:
     name: USER-SERVICE
@@ -59,7 +58,7 @@ eureka:
     fetch-registry: 'true'
     register-with-eureka: 'true'
     service-url:
-      defaultZone: http://${ADMIN-MANAGER-IP}:${ADMIN-MANAGER-IP}/eureka
+      defaultZone: http://${EUREKA-SERVICE-IP}:${EUREKA-SERVICE-PORT}/eureka
 server:
   port: ${USER-SERVICE-PORT}
 api:
