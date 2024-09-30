@@ -57,7 +57,7 @@ eureka:
   instance:
     prefer-ip-address: false
     hostname: ${USER-SERVICE-HOSTNAME}  # Kubernetes 서비스 이름으로 Eureka에 등록
-    non-secure-port: 11000  # 서비스가 실행되는 포트
+    non-secure-port: ${USER-SERVICE-PORT}  # 서비스가 실행되는 포트
     health-check-url-path: /actuator/health  # health 엔드포인트
     health-check-url: http://${USER-SERVICE-HOSTNAME}:${USER-SERVICE-ACTUATOR}/actuator/health  # Actuator의 health 엔드포인트
     management-port: ${USER-SERVICE-ACTUATOR}  # Actuator가 실행되는 포트
