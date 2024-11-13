@@ -15,7 +15,7 @@ management:
       enabled: true
   server:
     address: localhost
-    port: 13000
+    port: 13001
 eureka:
   client:
     register-with-eureka: true
