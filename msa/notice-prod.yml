@@ -13,9 +13,9 @@ management:
       enabled: true
     shutdown:
       enabled: true
-  server:
-    address: localhost
-    port: '12000'
+#  server:
+#    address: localhost
+#    port: '12000'
 spring:
   jpa:
     generate-ddl: 'false'

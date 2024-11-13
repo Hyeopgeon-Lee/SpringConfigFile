@@ -13,9 +13,9 @@ management:
       enabled: 'true'
     shutdown:
       enabled: true #Graceful Shutdown
-  server:
-    address: localhost
-    port: '11000'
+#  server:
+#    address: localhost
+#    port: '11000'
 spring:
   jpa:
     generate-ddl: 'false'
